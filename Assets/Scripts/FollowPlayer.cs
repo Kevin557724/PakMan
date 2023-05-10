@@ -6,8 +6,8 @@ public class FollowPlayer : MonoBehaviour
 
 {
      public GameObject Player;
-    private Vector3 offset;
-    public float RotateSpeed = 3.0f;
+    private Vector3 offset = new Vector3 (196,10,-165);
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +15,7 @@ public class FollowPlayer : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
           transform.position = Player.transform.position + offset;
     }
