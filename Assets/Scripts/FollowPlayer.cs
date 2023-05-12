@@ -6,8 +6,13 @@ public class FollowPlayer : MonoBehaviour
 
 {
      public GameObject Player;
+<<<<<<< Updated upstream
     private Vector3 offset = new Vector3 (196,10,-165);
    
+=======
+    private Vector3 offset;
+    public float RotateSpeed = 3.0f;
+>>>>>>> Stashed changes
     // Start is called before the first frame update
     void Start()
     {
